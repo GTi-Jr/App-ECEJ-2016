@@ -23,8 +23,13 @@ angular.module('ecej', ['ionic'])
 
   $stateProvider
 
-    .state('login', {
+  .state('login', {
     url: '/login',
     templateUrl: 'templates/login.html'
+  })
+
+  .state('esqueceu', {
+    url: '/esqueceu',
+    templateUrl: 'templates/esqueceu.html'
   })
 });

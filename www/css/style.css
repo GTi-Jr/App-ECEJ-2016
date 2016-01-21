@@ -1,4 +1,7 @@
-.login {
-    width: 90%;
-    height: 100%;
+.row.login {
+	margin-top: 18%;
+}
+
+.btn-esq {
+	font-size: 1.4rem;
 }
