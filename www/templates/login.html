@@ -1,35 +1,41 @@
-<ion-view>
+<ion-view view-title="Login">
   <ion-content>
     <div class="row">
       <form class="login-form">
         <div class="row">
           <div class="input-field col s12 center">
-            <img src="../img/logo.png" class="responsive-img valing profile-image-login" style="width: 70%">
+            <!--POSSUI UM STYLE PARA REDIMENSIONAR A LOGO-->
+            <img src="img/logo.png" class="responsive-img profile-image-login" style="width: 70%">
           </div>
         </div>
         <div class="row login">
           <div class="input-field col s12">
             <i class="mdi-social-person-outline prefix"></i>
-            <input id="email" class="error" placeholder="example@mail.com" autofocus="autofocus" type="email" value="" name="user[email]" aria-required="true">
+            <input id="email" class="error" placeholder="example@mail.com" autofocus="autofocus" type="email" value="" name="user[email]" aria-required="true" ng-model="email">
             <label for="email" class="center-align active">Email</label>
           </div>
         </div>
         <div class="row login">
           <div class="input-field col s12">
             <i class="mdi-action-lock-outline prefix"></i>
-            <input id="password" class="error" autocomplete="off" placeholder="Senha" type="password" name="user[password]" aria-required="true">
+            <input id="password" class="error" autocomplete="off" placeholder="Senha" type="password" name="user[password]" aria-required="true" ng-model="senha">
           </div>
         </div>
         <div class="row login">
           <div class="input-field col s12">
-            <button name="button" type="submit" class="btn waves-effect waves-light col s12">
+            <button name="button" type="submit" class="btn waves-effect waves-light col s12" ng-click="autenticar(email,senha)">
               Entrar
             </button>
           </div>
         </div>
+        <div class="row" ng-show="loginError">
+          <div class="input-field col s6 m6 l6">
+            <p class="left-align red-text">Email e/ou senha inválido(s)</p>
+          </div>
+        </div>
         <div class="row login">
           <div class="input-field col s6 m6 l6">
-            <p class="btn-esq center"><a href="#/esqueceu">Esqueceu sua senha?</a></p>
+            <p class="center"><a href="#/esqueceu">Esqueceu sua senha?</a></p>
           </div>
         </div>
       </form>

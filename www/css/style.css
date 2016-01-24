@@ -1,7 +1,9 @@
+/*Espaça as div's da tela de login e esqueceu senha*/
 .row.login {
 	margin-top: 18%;
 }
 
-.btn-esq {
-	font-size: 1.4rem;
+/*Centraliza o formulário*/
+form {
+  margin: auto;
 }

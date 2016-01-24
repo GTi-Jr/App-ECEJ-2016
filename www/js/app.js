@@ -1,4 +1,4 @@
-angular.module('ecej', ['ionic'])
+angular.module('ecej', ['ionic', 'ecej.controllers'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -19,13 +19,15 @@ angular.module('ecej', ['ionic'])
 })
 
 .config(function ($stateProvider, $urlRouterProvider) {
+  //Define o template de cada página e seus controllers
   $urlRouterProvider.otherwise('/login');
 
   $stateProvider
 
   .state('login', {
     url: '/login',
-    templateUrl: 'templates/login.html'
+    templateUrl: 'templates/login.html',
+    controller: 'LoginCtrl'
   })
 
   .state('esqueceu', {
