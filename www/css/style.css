@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Open Sans';
+  src:url('../fonts/Open-Sans/OpenSans-Regular.ttf');
+  src:url('../fonts/Open-Sans/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
 /*Espaça as div's da tela de login e esqueceu senha*/
 .row.login {
 	margin-top: 18%;
@@ -6,4 +18,30 @@
 /*Centraliza o formulário*/
 form {
   margin: auto;
+}
+
+/*Muda a cor de fundo do cabeçalho*/
+.barra-cabecalho {
+  background-color: #00cfcb;
+}
+
+/*Muda a cor dos ícones e do nome no cabeçalho*/
+button.button.icon {
+  color: #fff;
+}
+ion-header-bar h1{
+  color: #fff;
+}
+
+/*Coloca a foto de fundo do ECEJ e redimensiona a foto de perfil*/
+ion-list div div {
+  background-image: url(../img/fundo.png);
+}
+ion-list div div img {
+  height: 5.8rem;
+}
+
+.texto-side {
+  color: #31383b;
+  font-size: 1.27rem;
 }

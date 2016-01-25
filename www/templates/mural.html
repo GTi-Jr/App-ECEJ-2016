@@ -1,0 +1,90 @@
+<ion-side-menus>
+  <!-- Center content -->
+  <ion-side-menu-content ng-controller="SideController">
+    <ion-header-bar align-title="center" class="barra-cabecalho">
+      <div class="buttons">
+        <button class="button button-clear icon ion-drag" ng-click="toggleLeft()"></button>
+      </div>
+      <h1 class="title">Mural das Conexões</h1>
+      <div class="buttons">
+        <!-- ATUALIZAR href PARA MURAL-FORM -->
+        <a href="#/mural-form">
+          <button class="button button-clear icon ion-plus">
+          </button>
+        </a>
+      </div>
+    </ion-header-bar>
+    <ion-content>
+
+    </ion-content>
+  </ion-side-menu-content>
+  <ion-side-menu side="left">
+    <!-- PREENCHER COM ITENS DA LISTA -->
+    <ion-content class="scroll-content ionic-scroll">
+      <ion-list>
+        <div class="item">
+          <!-- COLOCAR VARIÁVEIS PARA FOTO NOME E EJ -->
+          <img class="circle" ng-src="img/alef.jpg">
+          <h2>Alef Carneiro</h2>
+          <p>GTi Engenharia Jr.</p>
+        </div>
+        <!-- ATUALIZAR href PARA INICIO -->
+        <a class="item waves-effect" href="#/mural">
+          <i class="small material-icons mdi-action-dashboard texto-side"></i>
+          <span class="texto-side">
+            Início
+          </span>
+        </a>
+        <!-- ATUALIZAR href PARA PROGRAMAÇÃO-->
+        <a class="item" href="#/mural">
+          <i class="small material-icons texto-side">web</i>
+          <span class="texto-side">
+            Mural das Conexões
+          </span>
+        </a>
+        <!-- ATUALIZAR href PARA PROGRAMAÇÃO-->
+        <a class="item" href="#/programacao">
+          <i class="small ion-android-calendar texto-side"></i>
+          <span class="texto-side">
+            Programação
+          </span>
+        </a>
+        <!-- ATUALIZAR href PARA EJs-->
+        <a class="item" href="#/ejs">
+          <i class="small material-icons texto-side">business</i>
+          <span class="texto-side">
+            EJs
+          </span>
+        </a>
+        <!-- ATUALIZAR href PARA CHAT -->
+        <a class="item" href="#/chat">
+          <i class="small ion-android-chat texto-side"></i>
+          <span class="texto-side">
+            Chat do Bench
+          </span>
+        </a>
+        <!-- ATUALIZAR href PARA LOCAL -->
+        <a class="item" href="#/local">
+          <i class="small ion-map texto-side"></i>
+          <span class="texto-side">
+            Local
+          </span>
+        </a>
+        <!-- ATUALIZAR href PARA PARCEIROS -->
+        <a class="item" href="#/parceiros">
+          <i class="small ion-ios-people texto-side"></i>
+          <span class="texto-side">
+            Parceiros
+          </span>
+        </a>
+        <!-- CRIAR FUNÇÃO PARA NG-CLICK E CHAMAR FUNÇÃO -->
+        <button class="item button-clear" ng-click="">
+          <i class="small material-icons mdi-hardware-keyboard-return texto-side"></i>
+          <span class="texto-side">
+            Sair
+          </span>
+        </button>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

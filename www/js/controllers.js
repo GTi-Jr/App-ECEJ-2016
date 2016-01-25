@@ -27,4 +27,10 @@ angular.module('ecej.controllers', ['Devise'])
       credentials.password = '';
     };
 
+  })
+
+  .controller('SideController', function($scope, $ionicSideMenuDelegate) {
+    $scope.toggleLeft = function() {
+      $ionicSideMenuDelegate.toggleLeft();
+    };
   });
