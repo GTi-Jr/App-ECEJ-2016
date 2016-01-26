@@ -15,7 +15,12 @@
       </div>
     </ion-header-bar>
     <ion-content>
-
+      <div class="list">
+        <a class="item" href="" ng-repeat="duvida in duvidas">
+          <h2>{{duvida.titulo}}</h2>
+          <p>{{duvida.descricao}}</p>
+        </a>
+      </div>
     </ion-content>
   </ion-side-menu-content>
   <ion-side-menu side="left">
@@ -24,9 +29,9 @@
       <ion-list>
         <div class="item">
           <!-- COLOCAR VARIÁVEIS PARA FOTO NOME E EJ -->
-          <img class="circle" ng-src="img/alef.jpg">
-          <h2>Alef Carneiro</h2>
-          <p>GTi Engenharia Jr.</p>
+          <img class="circle" ng-src="">
+          <h2></h2>
+          <p></p>
         </div>
         <!-- ATUALIZAR href PARA INICIO -->
         <a class="item waves-effect" href="#/mural">
@@ -78,12 +83,14 @@
           </span>
         </a>
         <!-- CRIAR FUNÇÃO PARA NG-CLICK E CHAMAR FUNÇÃO -->
-        <button class="item button-clear" ng-click="">
-          <i class="small material-icons mdi-hardware-keyboard-return texto-side"></i>
-          <span class="texto-side">
-            Sair
-          </span>
-        </button>
+        <a class="item">
+          <button class="item button-clear" ng-click="">
+            <i class="small material-icons mdi-hardware-keyboard-return texto-side"></i>
+            <span class="texto-side">
+              Sair
+            </span>
+          </button>
+        </a>
       </ion-list>
     </ion-content>
   </ion-side-menu>

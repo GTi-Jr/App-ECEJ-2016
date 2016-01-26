@@ -6,18 +6,19 @@
     <h1 class="title">Adicionar Pergunta</h1>
     <div class="buttons">
       <!-- CRIAR E CHAMAR FUNÇÃO PARA ADICIONAR PERGUNTA -->
-      <button class="button button-clear icon ion-checkmark" ng-click=""></button>
+      <button class="button button-clear icon ion-checkmark" ng-click="adicduvida(titulo, descricao)"></button>
     </div>
   </ion-header-bar>
   <ion-content>
   <div class="list">
     <label class="item item-input item-floating-label">
       <span class="input-label">Título</span>
-      <input type="text" placeholder="Título">
+      <input type="text" placeholder="Título" ng-model="titulo">
     </label>
     <label class="item item-input item-floating-label">
       <span class="input-label">Descrição</span>
-      <textarea type="text" placeholder="Descrição"></textarea>
+      <textarea type="text" placeholder="Descrição" ng-model="descricao"></textarea>
     </label>
+    <button ng-click="adicduvida(titulo, descricao)">Adicionar</button>
   </div>
 </ion-view>

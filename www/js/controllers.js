@@ -33,4 +33,17 @@ angular.module('ecej.controllers', ['Devise'])
     $scope.toggleLeft = function() {
       $ionicSideMenuDelegate.toggleLeft();
     };
+  })
+
+  .controller('MuralCtrl', function($scope, $state){
+    $scope.duvidas = [];
+    $scope.adicduvida = function (title, description) {
+      $scope.duvidas.push({
+        titulo: title,
+        descricao: description
+      });
+      // COLOCAR OBJETO EM JSON E MANDAR PARA O SERVIDOR
+      // CHAMAR FUNÇÃO PARA ATUALIZAR EVENTOS
+      $state.go('mural');
+    };
   });

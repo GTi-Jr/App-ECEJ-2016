@@ -37,11 +37,13 @@ angular.module('ecej', ['ionic', 'ecej.controllers'])
 
   .state('mural', {
     url: '/mural',
-    templateUrl: 'templates/mural.html'
+    templateUrl: 'templates/mural.html',
+    controller: 'MuralCtrl'
   })
 
   .state('mural-form', {
     url: '/mural-form',
-    templateUrl: 'templates/mural-form.html'
+    templateUrl: 'templates/mural-form.html',
+    controller: 'MuralCtrl'
   })
 });
